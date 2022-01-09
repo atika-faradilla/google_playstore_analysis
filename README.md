@@ -1,6 +1,6 @@
 # Google Play Store Analytics
-<img src="https://raw.githubusercontent.com/fafilia/capstone-UIFlask/master/full_capstone.png">
-## Introduction
+<img src="https://github.com/atika-faradilla/google_playstore_analysis/full_google_playstore_analysis.png">
+
 Pada project ini akan didemonstrasikan beberapa tahapan dalam proses data analysis yang berupa Data Preprocessing, Data Wrangling, dan Data Visualization. Kemudian akan dibangun sebuah Flask UI sederhana yang berisi beberapa tampilan plot yang merupakan hasil insight dari analisis data ini. 
 
 ## Data Summary
