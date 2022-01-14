@@ -56,7 +56,7 @@ def index():
         }).rename({'Category':'Total'}, axis=1).sort_values(by = 'App', ascending=False).reset_index().head()
     X = cat_order['Category']
     Y = cat_order['App']
-    my_colors = 'rgbkymc'
+    my_colors = ['#0099ff','#33adff','#66c2ff', '#99d6ff', '#ccebff']
     # bagian ini digunakan untuk membuat kanvas/figure
     fig = plt.figure(figsize=(8,3),dpi=300)
     fig.add_subplot()
@@ -116,15 +116,14 @@ def index():
                     ).sort_values(by = 'Average Price', ascending = False).reset_index().head(5)
     X = top_price['Category']
     Y = top_price['Average Price']
-    my_colors2 = 'gbcmr'
+    my_colors2 = ['#00e6e6','#33ffff','#66ffff','#99ffff','#ccffff']
     # bagian ini digunakan untuk membuat kanvas/figure
-    fig = plt.figure(figsize=(5,5),dpi=100)
+    fig = plt.figure(figsize=(8,6),dpi=100)
     fig.add_subplot()
     # bagian ini digunakan untuk membuat bar plot
     plt.bar(X, Y, color=my_colors2)
     plt.xlabel('Category')
     plt.ylabel('Average Price')
-    plt.title('Top 5 Category with The Highest Average Price')
     # bagian ini digunakan untuk menyimpan plot dalam format image.png
     plt.savefig('top_price.png',bbox_inches="tight") 
 
